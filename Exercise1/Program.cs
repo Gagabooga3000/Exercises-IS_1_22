@@ -7,6 +7,14 @@ namespace Exercise1
     {
         static void Main( string[] args )
         {
+            Fueltank tank = new Fueltank(10000);
+            Console.WriteLine("Amount:" + tank.GetAmount());
+            tank.Fill(3200);
+            Console.WriteLine("Amount:" + tank.GetAmount());
+            tank.Fill(5000);
+            Console.WriteLine("Amount:" + tank.GetAmount());
+
+
             Engine eng = new Engine();
             Console.WriteLine( "State: " + eng.GetState() );
             Console.WriteLine();
